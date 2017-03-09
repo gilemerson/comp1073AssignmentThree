@@ -1,0 +1,254 @@
+<!--
+    * File Name: Assignment Three - Mini Portfolio - JSON DATA
+    * Author Name: Gil Emerson (200186807)
+    * Website Name: GE Design Studio 
+    * File Description: Contact Page - (contact.html)
+-->
+
+
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title id="title"></title>
+
+    <!--CSS Section-->
+    <link rel="stylesheet" href=".\Scripts\lib\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href=".\Scripts\lib\bootstrap\dist\css\bootstrap-theme.min.css">
+    <link rel="stylesheet" href=".\Scripts\lib\font-awesome\css\font-awesome.min.css">
+    <!--Main Page / NavBar CSS-->
+    <link rel="stylesheet" href=".\Content\app-adjust.css">
+    <link rel="stylesheet" href=".\Content\reset.css">
+    <!--Footer CSS-->
+    <link rel="stylesheet" href=".\Content\footer.css">
+    <!-- FAVICON-->
+    <link rel="shortcut icon" href="Assets/favicon.ico" />
+
+</head>
+
+<body>
+
+    <header class="cd-header">
+        <!--Logo-->
+        <div class="cd-logo">
+            <a href="http://gilemerson.ca/comp1073/index.html">
+                <img class="img-responsive" src="Assets/my-logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="cd-secondary-nav">
+                <li><a href="index.html">Bio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- cd-nav -->
+        <a class="cd-primary-nav-trigger" href="#0">
+            <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+        </a>
+        <!-- cd-primary-nav-trigger -->
+    </header>
+
+    <nav>
+        <ul class="cd-primary-nav">
+            <li class="cd-label">GE Design Studio</li>
+            <li><a href="index.html">Bio</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Help</a></li>
+
+            <!--Social Media Icons-->
+            <li class="cd-label">Follow us</li>
+
+            <a class="fa fa-twitter social-icon" href="https://twitter.com/emerg5"></a>
+            <a class="fa fa-facebook social-icon" href="https://www.facebook.com/profile.php?id=100010781431773"></a>
+            <a class="fa fa-linkedin social-icon" href="https://ca.linkedin.com/in/gilemerson"></a>
+            <a class="fa fa-github social-icon" href="https://github.com/gilemerson"></a>
+            <a class="fa fa-envelope-o social-icon" href="mailto:gemerson@gilemerson.ca"></a>
+        </ul>
+    </nav>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!--Ignore This :)-->
+    <!--End Navbar-->
+
+    <!--Main Page Content-->
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <ol class="breadcrumb">
+                    <li id="homeList"></li>
+                    <li id="contactList"></li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22796.028677870636!2d-80.10574910106696!3d44.42283136253711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1482026879022"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Contact Details Column -->
+            <br />
+            <div class="col-md-4">
+                <p id="address">
+                    <br><br>
+                </p>
+                <p id="phoneNumber"><i class="fa fa-phone"></i>
+                    <abbr title="Phone"></abbr></p>
+                <p><i class="fa fa-envelope-o"></i>
+                    <abbr title="Email">Email</abbr>:<a class="link" href="mailto:gemerson@gilemerson.ca">gemerson@gilemerson.ca</a>
+                </p>
+                <p id="hours"><i class="fa fa-clock-o"></i>
+                    <abbr title="Hours"></abbr></p>
+                <br />
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a class="link" href="https://www.facebook.com/profile.php?id=100010781431773"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://ca.linkedin.com/in/gilemerson"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://twitter.com/emerg5"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://github.com/gilemerson"><i class="fa fa-github fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <!-- /.row -->
+
+        <!-- Contact Form -->
+        <div class="row">
+            <div class="col-md-8">
+                <!--Javascript that will print form out to console-->
+                <form onSubmit="console.log('Name: '+document.getElementById('contactName').value + ('\n'), 'Email Address: '+document.getElementById('contactEmail').value + ('\n'), 'Phone Number: '+document.getElementById('contactPhoneNumber').value + ('\n'), 'Message: '+document.getElementById('contactMessage').value)">
+
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Please Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Please Enter Your Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhoneNumber">Phone Number</label>
+                        <input type="tel" class="form-control" id="contactPhoneNumber" placeholder="Please Enter Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea class="form-control" rows="3" id="contactMessage" placeholder="Please Enter Your Message Here"></textarea>
+                    </div>
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                    <button type="reset" id="resetButton" class="btn btn-warning">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br /> <br />
+    <!--End Contact Form -->
+
+
+    <!-- Footer -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <a href="default.html">
+                        <img src="Assets/cd-logo.png" class="img-responsive" alt="GE Design Studio">
+                    </a>
+                    <p class="footer-links">
+                        <a href="index.html">Bio</a> ·
+
+                        <a href="projects.html">Projects</a> ·
+
+                        <a href="contact.html">Contact</a> ·
+
+                        <a href="#">Services</a> ·
+
+                        <a href="about.html">About Us</a>
+
+                        <br />
+
+                        <a href="#">Reviews</a> ·
+
+                        <a href="#">FAQ</a> ·
+
+                        <a href="#">Help</a> ·
+
+                        <a href="#">Privacy</a> ·
+
+                        <a href="#">Terms</a>
+                    </p>
+                    <p class="footer-company-name">Gil Emerson Design Studio &copy; 2016</p>
+                    <br />
+                    <img src="Assets/CanadaIcon.png" class="img-responsive" alt="Canada Flag Icon">
+                </div>
+                <!-- /.footer-left-->
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p id="footeraddress">
+                            <span></span>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p id="footerPhoneNumber"></p>
+                    </div>
+                    <div>
+                        <i class="fa fa-user"></i>
+                        <a class="fa fa-twitter social-icon " href="https://twitter.com/emerg5"></a>
+                        <a class="fa fa-facebook social-icon" href="https://www.facebook.com/profile.php?id=100010781431773"></a>
+                        <a class="fa fa-linkedin social-icon" href="https://ca.linkedin.com/in/gilemerson"></a>
+                        <a class="fa fa-envelope-o social-icon" href="mailto:gemerson@gilemerson.ca"></a>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>GE Emerson Design Studio</span> Welcome to my personal portfolio. I am the President here at
+                        Gil Emerson Design Studio. Here we offer next generation web services. Creating impactful and engaging
+                        user websites, helping our clients build their online brand presence and grow their business.
+
+                    </p>
+                </div>
+                <!-- Up Arrow (Footer) -->
+                <style>
+                    .glyphicon {
+                        color: white !important;
+                    }
+                </style>
+                <p class="pull-right">
+                    <a href="contact.html"><span class="glyphicon glyphicon-triangle-top"></span></a>
+                </p>
+            </footer>
+        </div>
+    </nav>
+
+    <!--Javascript-->
+    <script src=".\Scripts\lib\jquery\dist\jquery.min.js"></script>
+    <script src=".\Scripts\lib\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src=".\Scripts\contact.js"></script>
+
+</body>
+
+</html>
